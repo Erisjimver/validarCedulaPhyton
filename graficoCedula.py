@@ -87,6 +87,7 @@ def __validar_ced_ruc(nro,tipo):
 #print("Validar cedula o DNI Ecuador")
 #verificar(input("Ingrese numero de cedula: "))
 
+#Autor Israel
 
 
 root.mainloop()
