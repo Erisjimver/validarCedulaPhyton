@@ -88,6 +88,7 @@ def __validar_ced_ruc(nro,tipo):
 #verificar(input("Ingrese numero de cedula: "))
 
 #Autor Israel
+#COmpruebo Actualizacion en nueva Rama
 
 
 root.mainloop()
