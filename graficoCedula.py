@@ -34,7 +34,7 @@ def verificar(nro):
             tercer_dig = int(nro[2])
             if tercer_dig >= 0 and tercer_dig < 6 : # numeros enter 0 y 6
                 if l == 10:
-                    return __validar_ced_ruc(nro,0)                       
+                    return __validar_ced_ruc(nro,0)    #Devuelve la validacion de una Cedula NO rUC                   
                 elif l == 13:
                     return __validar_ced_ruc(nro,0) and nro[10:13] != '000' # se verifica q los ultimos numeros no sean 000
             elif tercer_dig == 6:
