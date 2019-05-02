@@ -2,11 +2,12 @@ from tkinter import *
 from tkinter import messagebox
 
 root=Tk()
+root.title("Validar Cedula")
 miFrame=Frame(root,width=200,height=100)
 miFrame.pack()
 
 #------Label Numero de cedula---------------
-labelCedula=Label(miFrame,text="Ingrese numero de cedula:")
+labelCedula=Label(miFrame,text="Ingrese numero de cedula: ")
 labelCedula.grid(row=0,column=0,sticky="w",padx=8,pady=2)
 
 #------Cuadro de texto ingresar N Cedula----
@@ -27,7 +28,7 @@ etiqueta.pack()
 
 def verificar(nro):
     l = len(nro)
-    print(l)
+
     if l == 10 or l == 13: # verificar la longitud correcta
         cp = int(nro[0:2])
         if cp >= 1 and cp <= 24: # verificar codigo de provincia
@@ -77,10 +78,10 @@ def __validar_ced_ruc(nro,tipo):
     val = base - mod if mod != 0 else 0
     
     if val==d_ver:
-        print("Cedula Valida")
+        #print("Cedula Valida")
         etiqueta.config(text="Cedula Validad")
     else:
-        print("Cedula Invalida")
+        #print("Cedula Invalida")
         etiqueta.config(text="Cedula Invalida")
     return val == d_ver
 
